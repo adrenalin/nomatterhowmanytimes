@@ -1,3 +1,4 @@
+# No rights reserved, this piece of art is released as public domain
 text = 'No matter how many times, repeat'
 errors = 'abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789!"#€%&/()=,.;:+    '
 char = 0
