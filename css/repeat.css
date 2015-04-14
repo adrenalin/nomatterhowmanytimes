@@ -1,0 +1,23 @@
+@import url("http://fonts.googleapis.com/css?family=Cutive+Mono");
+html {
+  overflow-y: scroll; }
+
+html, body {
+  margin: 0; }
+
+#repeat {
+  font-family: "Cutive Mono", monospace;
+  margin: 2em auto;
+  width: 20em;
+  font-size: 24px; }
+  @media only screen and (max-width: 900px) {
+    #repeat {
+      font-size: 16px; } }
+  @media only screen and (max-width: 600px) {
+    #repeat {
+      font-size: 12px; } }
+  @media only screen and (max-width: 300px) {
+    #repeat {
+      font-size: 11px; } }
+
+/*# sourceMappingURL=repeat.css.map */
