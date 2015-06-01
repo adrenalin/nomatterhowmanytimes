@@ -3,21 +3,51 @@ html {
   overflow-y: scroll; }
 
 html, body {
-  margin: 0; }
+  margin: 0;
+  height: 100%; }
 
 #repeat {
   font-family: "Cutive Mono", monospace;
-  margin: 2em auto;
+  margin: 0 auto;
   width: 20em;
-  font-size: 24px; }
+  font-size: 24px;
+  line-height: 24px;
+  padding-bottom: 24px;
+  margin-left: -10em;
+  left: 50%;
+  position: absolute;
+  bottom: 20%;
+  margin-bottom: -24px; }
+  #repeat .row {
+    -webkit-transition-property: all;
+    -moz-transition-property: all;
+    -ms-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -webkit-transition-duration: 500ms;
+    -moz-transition-duration: 500ms;
+    -ms-transition-duration: 500ms;
+    -o-transition-duration: 500ms;
+    transition-duration: 500ms;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -ms-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    position: absolute;
+    left: 0;
+    right: 0; }
   @media only screen and (max-width: 900px) {
     #repeat {
-      font-size: 16px; } }
+      font-size: 16px;
+      line-height: 16px; } }
   @media only screen and (max-width: 600px) {
     #repeat {
-      font-size: 12px; } }
+      font-size: 12px;
+      line-height: 12px; } }
   @media only screen and (max-width: 300px) {
     #repeat {
-      font-size: 11px; } }
+      font-size: 11px;
+      line-height: 11px; } }
 
 /*# sourceMappingURL=repeat.css.map */

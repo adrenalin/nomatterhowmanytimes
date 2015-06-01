@@ -1,3 +1,11 @@
+@mixin vendors($property, $value) {
+  -webkit-#{$property}: $value;
+  -moz-#{$property}: $value;
+  -ms-#{$property}: $value;
+  -o-#{$property}: $value;
+  #{$property}: $value;
+}
+
 @import url("http://fonts.googleapis.com/css?family=Cutive+Mono");
 
 html {
@@ -6,23 +14,45 @@ html {
 
 html, body {
   margin: 0;
+  height: 100%;
 }
 
 #repeat {
+  $s: 24px;
   font-family: "Cutive Mono", monospace;
-  margin: 2em auto;
+  margin: 0 auto;
   width: 20em;
-  font-size: 24px;
+  font-size: $s;
+  line-height: $s;
+  padding-bottom: $s;
+  margin-left: -10em;
+  left: 50%;
+  position: absolute;
+  bottom: 20%;
+  margin-bottom: -1 * $s;
+  
+  .row {
+    @include vendors(transition-property, all);
+    @include vendors(transition-duration, 500ms);
+    @include vendors(transition-timing-function, ease-out);
+    
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
   
   @media only screen and (max-width: 900px) {
     font-size: 16px;
+    line-height: 16px;
   }
   
   @media only screen and (max-width: 600px) {
     font-size: 12px;
+    line-height: 12px;
   }
   
   @media only screen and (max-width: 300px) {
     font-size: 11px;
+    line-height: 11px;
   }
 }
