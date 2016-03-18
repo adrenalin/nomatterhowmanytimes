@@ -1,7 +1,7 @@
 (function() {
   $(function() {
     var addChar, c, char, container, d, errors, options, p, removeChar, removeCharDelay, row, text;
-    text = 'No matter how many times, repeat';
+    text = document.title || 'No matter how many times, repeat';
     errors = 'abcdefghijklmnopqrstuvwxyz0123456789abcdefghijklmnopqrstuvwxyz0123456789!"#€%&/()=,.;:+    ';
     char = 0;
     c = null;
